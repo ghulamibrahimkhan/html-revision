@@ -2,107 +2,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--  -->
-    <meta name="author" content="Morbius">
-    <meta name="description" content="This webpage is manage by morbius">
-    <title>Revision</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="html5.png" type="image/x-icon">
+  <!--  -->
+  <meta name="author" content="Morbius" />
+  <meta name="description" content="This webpage is manage by morbius" />
+  <title>Revision</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="html5.png" type="image/x-icon" />
 </head>
 
 <body>
-
+  <!-- Symentic tags -->
+  <!-- nav, header, main, footer,hr, (nav header and footer can be more than one in one page)-->
+  <!-- article, aside>details>summary,  -->
+  <!--mark , <time>datetime="08:00/PT3H"</time>  -->
+  <header>
     <nav>
-        <ul>
-            <li><a href="#solidity">Solidity</a></li>
-            <li><a href="#rust">Rust</a></li>
-        </ul>
-    </nav>
-
-    <ul>
+      <ul aria-label="primary-nav">
         <li><a href="/about.html">About Page</a></li>
-    </ul>
-    <h1>Hello World</h1>
-    <p><strong> Blockchain </strong>is the future of web. <em> Bitcoin is the first application of blockchain</em></p>
+        <li><a href="#solidity">Solidity</a></li>
+        <li><a href="#rust">Rust</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h1><abbr title="Bitcoin">BTC</abbr></h1>
+  <main>
+    <h1>WEB 3.0</h1>
+    <p>
+      <strong> Blockchain </strong>is the future of web.
+      <em> Bitcoin is the first application of blockchain</em>
+    </p>
 
-    <p> &#60; &copy; &gt;</p>
+    <section>
+      <aside>
+        <h2>Web 3.0 semenar</h2>
+      </aside>
+      <p>
+      <address>SSUET Audutorium </address>
+      <time datetime="2022-07-01 20:00">Blockchain Conference</time>
+      <p>Register now</p>
+      </p>
+    </section>
 
-    <h1>Crypto Currencies</h1>
+    <h2><abbr title="Bitcoin">BTC</abbr></h2>
+    <p>&#60; &copy; &gt;</p>
+
+    <h2>Crypto Currencies</h2>
     <ol>
-        <li> Bitcoin </li>
-        <li> Etherum </li>
-        <li> Polygon </li>
+      <li>Bitcoin</li>
+      <li>Etherum</li>
+      <li>Polygon</li>
     </ol>
 
     <ol>
-        <li>
-            <p><a href="https://bitcoin.org/en/" target="_blank"> Bitcoin</a></p>
-            <address>bit coin website shows <br>all data inside blockchain</address>
-        </li>
-        <li>
-            <p> Ethereum </p>
-            <address>Ethereum website shows <br>all data inside blockchain</address>
-        </li>
+      <li>
+        <p><a href="https://bitcoin.org/en/" target="_blank"> Bitcoin</a></p>
+        <address>
+          bit coin website shows <br />all data inside blockchain
+        </address>
+      </li>
+      <li>
+        <p><a href="https://ethereum.org/en/">Ethereum</a></p>
+        <address>
+          Ethereum website shows <br />all data inside blockchain
+        </address>
+      </li>
     </ol>
 
     <!--Description list  -->
-    <h1>Blockchain</h1>
-    <dl>
-        <dt>Ledger</dt>
-        <dd>Blockchain maintain public Ledger of all transaction</dd>
+    <article id="blockchain">
+      <h1>Blockchain</h1>
+      <section id="blockchain-technologies">
+        <h3>Blockchain Technologies</h3>
+        <dl>
+          <dt>Ledger</dt>
+          <dd>Blockchain maintain public Ledger of all transaction</dd>
 
-        <dt>Mempool</dt>
-        <dd>Blockchain collects all transactions in Mempool</dd>
+          <dt>Mempool</dt>
+          <dd>Blockchain collects all transactions in Mempool</dd>
 
-        <dt>Genesis Block</dt>
-        <dd>The first block in a blockchain is called Genesis</dd>
-    </dl>
+          <dt>Genesis Block</dt>
+          <dd>The first block in a blockchain is called Genesis</dd>
+        </dl>
+      </section>
 
-
-    <!-- loading = "lazy" -->
-    <section id="solidity">
-        <h2>Solidity</h2>
-        <p>Solidity is statically typed programing language. We deploy smart contracs on evm compatible chai on Solidity
-        </p>
+      <!-- loading = "lazy" -->
+      <section id="solidity">
+        <h3>Solidity</h3>
+        <details>
+          <p>
+            <summary>Solidity The language of smart contracts</summary>is statically typed programing language. We
+            deploy smart
+            contracs on evm compatible chai on Solidity
+          </p>
+        </details>
         <figure>
-            <img src="/images/solidity.png" title="future of smartcontracs " alt="Solidity logo" width="400px">
-            <figcaption>Its a language of web3 contracts </figcaption>
+          <img src="/images/solidity.png" title="future of smartcontracs " alt="Solidity logo" width="400px" />
+          <figcaption>Its a language of web3 contracts</figcaption>
         </figure>
-    </section>
+      </section>
 
-
-    <section id="rust">
-        <h2>Rust</h2>
-        <p>Rust is a low level programming language. mostly use to comminucate with iot devices , drones robotes</p>
+      <section id="rust">
+        <h3>Rust</h3>
+        <details>
+          <p>
+            <summary>general-purpose programming language</summary>
+            Rust is a multi-paradigm, general-purpose programming language. Rust emphasizes performance, type safety,
+            and concurrency.
+          </p>
+        </details>
         <figure>
-            <img src="/images/Rust.jpg" title="low lev programming language" alt="Rust logo" width="400px" loading="lazy">
-            <figcaption>The language of robots</figcaption>
+          <img src="/images/Rust.jpg" title="low lev programming language" alt="Rust logo" width="400px"
+            loading="lazy" />
+          <figcaption>The language of robots</figcaption>
         </figure>
+      </section>
 
-    </section>
 
-    <section id="html"></section>
-    
-    <!-- Example of fig in other use and html code on website -->
-    <figure>
-        <figcaption>Example of HTMLl5 code</figcaption>
-        <p>&lt;h1&gt;Hello world&lt;h1&gt;</p>
-    </figure>
+      <section id="html">
+        <h3>HTML5</h3>
+        <!-- Example of fig in other use and html code on website -->
+        <figure>
+          <figcaption>Example of HTMLl5 code</figcaption>
+          <p>&lt;h1&gt;Hello world&lt;h1&gt;</p>
+        </figure>
+      </section>
+    </article>
 
     <!-- Download link -->
     <h3><a href="./html5.png" download="">Download html5 png</a></h3>
 
     <h3><a href="tel:+9235521342">Phone</a></h3>
-
-
-
-
+  </main>
+  <hr />
+  <footer>
+    <p>&copy;Ghulam Ibrahim Khan</p>
+    <nav aria-labelledby="footer-social-links">
+      <h2 id="footer-social-links">Contact us</h2>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank"> Linkedin </a>
+        </li>
+        <li><a href="https://twitter.com/" target="_blank"> Twitter </a></li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"> Facebook </a>
+        </li>
+      </ul>
+      <p><a href="/">Back to top</a></p>
+    </nav>
+  </footer>
 </body>
 
 </html>
